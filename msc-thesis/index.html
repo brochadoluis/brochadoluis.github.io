@@ -1,0 +1,506 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Crew and Aircraft Electronic Market</title>
+
+	<meta name="author" content="Luís Reis">
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+	<!-- <link rel="icon" href="favicon.png" type="image/x-icon" /> -->
+
+	<title>reveal.js</title>
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/solarized.css">
+	<link rel="stylesheet" href="css/custom.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+	var link = document.createElement( 'link' );
+	link.rel = 'stylesheet';
+	link.type = 'text/css';
+	link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+	document.getElementsByTagName( 'head' )[0].appendChild( link );
+	</script>
+</head>
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section id ="home">
+				<h3 class="title">Crew and Aircraft Electronic Market</h3>
+				<br>
+				<div>
+					<small>
+						<br>
+						July 18, 2017
+						<br>
+						<br>
+						Luís Reis
+						<br>
+						<br>
+						<strong>Supervision</strong>
+						<br>
+						Ana Paula Rocha, PhD, <i>University of Porto</i>
+						<br>
+						António Castro, PhD, <i>University of Porto</i>
+						<br>
+					</small>
+				</div>
+			</section>
+
+			<section id="agenda">
+				<h2>Agenda</h2>
+				<br>
+				<ol>
+					<div class="row">
+						<div class="col-1">&nbsp;</div>
+						<div class="col-5">
+							<li><a href="#/introduction">Introduction</a></li>
+							<li><a href="#/problem">Problem</a></li>
+							<li><a href="#/motivation">Motivation</a></li>
+							<li><a href="#/related_work">Related Work</a></li>
+							<li><a href="#/goals">Goals</a></li>
+						</div>
+						<div class="col-1">&nbsp;</div>
+						<div class="col-5">
+							<li><a href="#/hypothesis">Hypothesis</a></li>
+							<li><a href="#/methodology">Methodology</a></li>
+							<li><a href="#/results">Results</a></li>
+							<li><a href="#/conclusion">Conclusion</a></li>
+							<li><a href="#/future_work">Future Work</a></li>
+						</div>
+					</div>
+				</ol>
+
+				<aside class="notes">
+					Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+				</aside>
+			</section>
+
+			<section id="introduction">
+				<h2>Introduction</h2>
+				<strong>Electronic Markets</strong><br>
+				<div class="body">
+					<br>
+					<div class="row" style="text-align: center;">
+						<div class="col-3">
+							<img data-src="assets/robot_atlas.jpg">
+							<small>Atlas</small>
+						</div>
+						<div class="col-6">
+							<strong>Characteristics</strong><br>
+							<ul style="text-align: center; list-style: none; padding: 0; margin: 0;">
+								<li><i>Floating base</i></li>
+								<li>Human-like design</li>
+								<li><i>Many degrees of freedom</i></li>
+							</ul>
+							<br><br>
+							<strong>Challenges</strong><br>
+							<ul style="text-align: center; list-style: none; padding: 0; margin: 0;">
+								<li>Autonomy</li>
+								<li>Bipedal balance</li>
+								<li><i>Curse of dimensionality</i></li>
+								<li>Safe human interaction</li>
+							</ul>
+						</div>
+						<div class="col-3">
+							<img data-src="assets/robot_valkyrie.jpg">
+							<small>Valkyrie</small>
+						</div>
+					</div>
+				</div>
+				<aside class="notes">
+					Electronic Markets are the foundation of electronic commerce and are defined as an inter-organizational information
+					system that allows the participants to exchange information about prices and information, products and services.[1]
+				</aside>
+			</section>
+
+			<section id="problem">
+				<section id="problem_1">
+					<h3>Problem</h3>
+					<strong>Airline Disruption Management</strong><br><br>
+					<div class="body" style="text-align: center;">
+						<ul>
+							<li><strong><i>Irregular Operation</i></strong> or <strong><i>Flight Disruption</i></strong>: name given to  a flight that for some reason can’t fulfill the planned schedule,
+								causing the flights to be delayed or canceled.</li>
+								<br>
+								<li><strong><i>Recovery Process</i></strong> or <strong><i>Disruptions Management</i></strong>: The process that tries to minimize irregular operations. </li>
+								<ul>
+								</div>
+								<aside class="notes">
+									These disruptions can be caused by aircraft malfunctions, crew absenteeism or bad weather, among others.
+								</aside>
+							</section>
+
+							<section id="problem_2">
+								<h3>Problem</h3>
+								<strong>Airline Disruption Management</strong><br><br>
+								Dividido em 3 dimensões (imagem com isso)
+								<aside class="notes">
+									Falar dos vários métodos de recuperacão
+								</aside>
+							</section>
+
+							<section id="problem_3">
+								<h3>Problem</h3>
+								<strong>Airline Disruption Management</strong><br><br>
+								Falar dos custos
+								<aside class="notes">
+									Explicar acting cycle
+								</aside>
+							</section>
+
+							<section id="problem_4">
+								<h3>Problem</h3>
+								<strong>Airline Operations Control Centre</strong><br><br>
+								Imagem do acting cylce
+								<aside class="notes">
+									Explicar acting cycle
+								</aside>
+							</section>
+						</section>
+
+						<section id="motivation">
+							<section id="motivation_1">
+								<h3>Motivation</h3>
+								<strong>Electronic Markets</strong><br>
+								<div class="body">
+									<br>
+									<div class="row" style="text-align: center;">
+										<strong>Motivation 1</strong><br>
+										<i>A better recovery process could reduce the costs in, at least 20% of the annual losses due to irregular operations.</i>
+									</div>
+								</div>
+							</section>
+
+							<section id="motivation_2">
+								<h3>Motivation2</h3>
+								<strong>Electronic Markets</strong><br>
+								<div class="body">
+									<br>
+									<div class="row" style="text-align: center;">
+										<strong>Motivation 2</strong><br>
+										<i>At the moment, disruption management only uses a company’s own resources (aircraft and crew members).</i>
+									</div>
+								</div>
+							</section>
+
+							<section id="motivation_3">
+								<h3>Motivation</h3>
+								<strong>Electronic Markets</strong><br>
+								<div class="body">
+									<br>
+									<div class="row" style="text-align: center;">
+										<strong>Motivation 3</strong><br>
+										Due to the lack of collaboration between airline companies, operations recovery works in a more restrict solution space.
+									</div>
+								</div>
+							</section>
+							<aside class="notes">
+								Electronic Markets are the foundation of electronic commerce and are defined as an inter-organizational information
+								system that allows the participants to exchange information about prices and information, products and services.[1]
+							</aside>
+						</section>
+					</section>
+
+					<section id="related_work">
+						<h3>Related Work</h3>
+						MASDIMA
+					</section>
+
+					<section id="goals">
+						<h3>Goals</h3>
+						<div class="body">
+							<table>
+								<tbody>
+									<tr class="spaceUnder">
+										<td>$\mathcal{G}_1$.</td>
+										<td>Promote cooperation between airline companies to expand their solutions space;</td>
+									</tr>
+									<tr class="spaceUnder">
+										<td>$\mathcal{G}_2$.</td>
+										<td>Reduce disruptions costs and delays using solutions present in the gererated space.</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<aside class="notes">
+							Promote the cooperattion trough a multi-agent based electronic market.
+							Reduce costs and delays using solutions from the EM
+						</aside>
+					</section>
+
+					<section id="hypothesis">
+						<h3>Hypothesis</h3>
+						<div class="body" >
+							<table>
+								<tbody>
+									<tr class="spaceUnder">
+										<td>$\mathcal{H}$.</td>
+										<td>The solutions obtained through the EM are <u>more cost-effective</u> than the solutions obtained with each company's own resources;</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<aside class="notes">
+							These disruptions can be caused by aircraft malfunctions, crew absenteeism or bad weather, among others.
+						</aside>
+					</section>
+
+					<section id="methodology">
+						<h3>Methodology</h3>
+						Aqui entra o gif do diagrama de comunicacão
+					</section>
+
+					<section id="results">
+						<section id="experiments_overview">
+							<h3>Results</h3>
+							<strong>Experiments</strong><br><br>
+							<div class="body">
+								<table>
+									<tbody>
+										<tr class="spaceUnder">
+											<td>$\mathcal{E}_1$.</td>
+											<td>50-50 Experiment</td>
+										</tr>
+										<tr class="spaceUnder">
+											<td>$\mathcal{E}_2$.</td>
+											<td>80-20 Experiment</td>
+										</tr>
+										<tr class="spaceUnder">
+											<td>$\mathcal{E}_3$.</td>
+											<td>20-80 Experiment</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<aside class="notes">
+								In order to validate the market, 3 experiments were made. bla bla bla
+								The next slides show the results obtained in each one
+							</aside>
+						</section>
+
+						<section id="experiment_1">
+							<h3>Results</h3>
+							<strong>Experiment 1 (50-50)</strong><br><br>
+						</section>
+
+						<section id="experiment_2">
+							<h3>Results</h3>
+							<strong>Experiment 2 (80-20)</strong><br><br>
+						</section>
+
+						<section id="experiment_3">
+							<h3>Results</h3>
+							<strong>Experiment 3 (20-80)</strong><br><br>
+						</section>
+
+						<section id="comparisons_overview">
+							<h3>Results</h3>
+							<strong>Comparisons</strong><br><br>
+							<div class="body">
+								<table>
+									<tbody>
+										<tr class="spaceUnder">
+											<td>$\mathcal{C}_1$.</td>
+											<td>Experiment 1 - Experiment 2</td>
+										</tr>
+										<tr class="spaceUnder">
+											<td>$\mathcal{C}_2$.</td>
+											<td>Experiment 1 - Experiment 3</td>
+										</tr>
+										<tr class="spaceUnder">
+											<td>$\mathcal{C}_3$.</td>
+											<td>Experiment 2 - Experiment 3</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<aside class="notes">
+								Promote the cooperattion trough a multi-agent based electronic market.
+								Reduce costs and delays using solutions from the EM
+							</aside>
+						</section>
+
+						<section id="comparison_1">
+							<h3>Results</h3>
+							<strong>Comparison 1</strong><br>
+							<small>Experiment 1 - Experiment 2</small><br><br>
+							</section>
+
+							<section id="comparison_2">
+								<h3>Results</h3>
+								<strong>Comparison 2</strong><br>
+								<small>Experiment 1 - Experiment 3</small><br><br>
+								</section>
+
+								<section id="comparison_3">
+									<h3>Results</h3>
+									<strong>Comparison 3</strong><br>
+									<small>Experiment 2 - Experiment 3</small><br><br>
+									</section>
+								</section>
+
+								<section id="easter_egg_coming">
+									<h3>Conclusion</h3>
+									<div class="body">
+										<table>
+											<tbody>
+												<tr class="spaceUnder">
+													<td>The results obtained are promising, but it is needed further testing with real time intervals for availability and more test cases.</td>
+												</tr>
+												<tr class="spaceUnder">
+													<td>Mean Delay Reduction of 66.85% and Mean Cost Reduction of 63.51%.</td>
+												</tr>
+												<tr class="spaceUnder">
+													<td>Success rate of 91.7%, 67.7% considering availability only.
+													(11 in 12 disruptions had theirs cost reduced using at least one of the scenarios tested, 8 considering availability only).</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</section>
+
+								<section data-background-image = "http://i.giphy.com/90F8aUepslB84.gif"></section>
+
+								<section id="future_work">
+									<h3>Future Work</h3>
+										<ul style="text-align: center; list-style: none; padding: 0; margin: 0;">
+											<li>Usagem of different learning approches;</li>
+											<li>Integration in MASDIMA;</li>
+											<li>Usage of heuristics to combine the resources;</li>
+											<li>Useage of trust models;</li>
+											<li>Graphical Interface.</li>
+										</ul>
+								</section>
+
+								<section id="references">
+									<h3>References</h3>
+									[1] Troy J. Strader and Michael J. Shaw. Characteristics of electronic markets. Decision Support Systems, 21(3):185 – 198, 1997. Electronic commerce.
+									<br>
+								</section>
+
+								<section>Single Horizontal Slide</section>
+								<section>
+									<section>Vertical Slide 1</section>
+									<section>
+										## Page title2
+										<br><br><br>
+										A paragraph with some text and a [link](http://hakim.se).
+									</section>
+								</section>
+								<section data-markdown>
+									<textarea data-template>
+										## Page title
+										<br><br><br>
+										A paragraph with some text and a [link](http://hakim.se).
+									</textarea>
+								</section>
+								<section data-markdown>
+									<script type="text/template">
+										- Item 1 <!-- .element: class="fragment" data-fragment-index="1" -->
+										- Item 2 <!-- .element: class="fragment" data-fragment-index="2" -->
+										- Item 3 <!-- .element: class="fragment" data-fragment-index="2" -->
+										- Item 4 <!-- .element: class="fragment" data-fragment-index="2" -->
+									</script>
+								</section>
+								<section data-markdown>
+									<script type="text/template">
+										<!-- .slide: data-background="#ff0000" -->
+										Markdown content
+									</script>
+								</section>
+								<section>
+									<p class="fragment grow">grow</p>
+									<p class="fragment shrink">shrink</p>
+									<p class="fragment fade-out">fade-out</p>
+									<p class="fragment fade-up">fade-up (also down, left and right!)</p>
+									<p class="fragment current-visible">visible only once</p>
+									<p class="fragment highlight-current-blue">blue only once</p>
+									<p class="fragment highlight-red">highlight-red</p>
+									<p class="fragment highlight-green">highlight-green</p>
+									<p class="fragment highlight-blue">highlight-blue</p>
+								</section>
+								<section data-background-image = "http://i.giphy.com/90F8aUepslB84.gif">
+								</section>
+								<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-video-loop data-background-video-muted>
+								</section>
+								<section data-background-iframe="https://slides.com" data-background-interactive>
+									<h2>Iframe</h2>
+								</section>
+								<section data-transition="slide">
+									The train goes on …
+								</section>
+								<section data-transition="slide">
+									<video data-autoplay src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"></video>
+								</section>
+								<section data-transition="slide-in fade-out">
+									<section>
+										<h2>This video will use up the remaining space on the slide</h2>
+										<video class="stretch" src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"></video>
+									</section>
+								</section>
+								<section data-transition="fade-in slide-out">
+									(Passengers entering and leaving)
+								</section>
+								<section data-transition="slide">
+									And it starts again.
+									<a href="#/2/2">Link</a>
+									<a href="#/some-slide">Link</a>
+								</section>
+								<section>
+									<span class="fragment fade-in">
+										<span class="fragment fade-out">I'll fade in, then out</span>
+									</span>
+								</section>
+								<section>
+									<p class="fragment" data-fragment-index="3">Appears last</p>
+									<p class="fragment" data-fragment-index="1">Appears first</p>
+									<p class="fragment" data-fragment-index="2">Appears second</p>
+								</section>
+								<section>
+									<pre><code data-trim data-noescape>
+										(def lazy-fib
+										(concat
+										[0 1]
+										<mark>((fn rfib [a b]</mark>
+										(lazy-cons (+ a b) (rfib b (+ a b)))) 0 1)))
+									</code></pre>
+								</section>
+							</div>
+						</div>
+
+						<script src="lib/js/head.min.js"></script>
+						<script src="js/reveal.js"></script>
+
+						<script>
+						// More info about config & dependencies:
+						// - https://github.com/hakimel/reveal.js#configuration
+						// - https://github.com/hakimel/reveal.js#dependencies
+						Reveal.initialize({
+							dependencies: [
+								// Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
+								{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+								// Interpret Markdown in <section> elements
+								{ src: 'plugin/markdown/marked.js' },
+								{ src: 'plugin/markdown/markdown.js' },
+								// Syntax highlight for <code> elements
+								{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+								// Zoom in and out with Alt+click
+								{ src: 'plugin/zoom-js/zoom.js', async: true },
+								// Speaker notes
+								{ src: 'plugin/notes/notes.js', async: true },
+								// MathJax
+								{ src: 'plugin/math/math.js', async: true }
+							]
+						});
+						</script>
+					</body>
+					</html>

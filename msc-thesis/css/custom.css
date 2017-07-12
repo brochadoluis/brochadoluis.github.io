@@ -1,0 +1,151 @@
+/**
+* Custom CSS for this presentation.
+* Author: Copyright (C) 2017 Henrique Ferrolho
+*/
+
+@import url(../../lib/font/source-sans-pro/source-sans-pro.css);
+
+section.has-dark-background, section.has-dark-background h1, section.has-dark-background h2, section.has-dark-background h3, section.has-dark-background h4, section.has-dark-background h5, section.has-dark-background h6 {
+	color: #fff;
+}
+
+/*********************************************
+* GLOBAL STYLES
+*********************************************/
+
+body {
+	background: #fff;
+	background-color: #fff;
+}
+
+.reveal section img {
+	border: initial;
+	box-shadow: initial;
+}
+
+.reveal section .body {
+	font-size: 0.8em;
+	margin: auto;
+	text-align: justify;
+	width: 100%;
+}
+
+.reveal section .body table * {
+	text-align: justify;
+}
+
+/*********************************************
+* GRID SYSTEM
+*********************************************/
+
+* {
+	box-sizing: border-box;
+}
+
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+[class*="col-"] {
+	float: left;
+	padding: 15px;
+}
+
+.col-1  { width: 8.33%; }
+.col-2  { width: 16.66%; }
+.col-3  { width: 25%; }
+.col-4  { width: 33.33%; }
+.col-5  { width: 41.66%; }
+.col-6  { width: 50%; }
+.col-7  { width: 58.33%; }
+.col-8  { width: 66.66%; }
+.col-9  { width: 75%; }
+.col-10 { width: 83.33%; }
+.col-11 { width: 91.66%; }
+.col-12 { width: 100%; }
+
+/*********************************************
+* FOOTER LINK
+*********************************************/
+
+.footer {
+	bottom: 0.3em;
+	left: 0.3em;
+	position: absolute;
+}
+
+.footer a {
+	color: #268bd2;
+	font-family: initial;
+	font-size: 0.55em;
+	text-decoration: none;
+	transition: color 0.15s ease;
+	z-index: 1;
+}
+
+.footer a:hover {
+	color: #78b9e6;
+}
+
+@media screen and (max-width: 600px) {
+
+	.footer {
+		display: none;
+	}
+
+}
+
+/*********************************************
+* PROGRESS BAR
+*********************************************/
+
+.reveal .progress {
+	bottom: 2px;
+}
+
+/*********************************************
+* HOME SLIDE
+*********************************************/
+
+#home {
+	text-align: initial;
+}
+
+/*********************************************
+* AGENDA SLIDE
+*********************************************/
+
+#agenda ol {
+	width: 100%;
+}
+
+#agenda ol li {
+	line-height: 1.6em;
+	height: auto;
+}
+
+/*********************************************
+* TALBES SPACEMENT
+*********************************************/
+
+tr.spaceUnder>td {
+padding-top: 1em;
+padding-bottom: 1em;
+}
+
+/*********************************************
+* REFERENCES
+*********************************************/
+
+#references table {
+	font-size: 0.5em;
+}
+
+/*#goals table td,
+#hypothesis table td,
+#results table td,*/
+#references table td {
+	border-bottom: initial;
+}
