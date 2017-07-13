@@ -90,7 +90,7 @@
 					<div class="body">
 						<div class="row">
 							<div class="col-5" style="text-align: center">
-								<img data-src="figures/disruption.gif"><br>
+								<img data-src="figures/disruption.gif" width="75%"><br>
 								<small>Fig 1: Flight Disrutpion</small>
 							</div>
 							<div class="col-3">&nbsp;</div>
@@ -201,7 +201,6 @@
 						system that allows the participants to exchange information about prices and information, products and services.[1]
 					</aside>
 				</section>
-			</section>
 
 			<section id="related_work">
 				<h3>Related Work</h3>
@@ -237,6 +236,9 @@
 				<aside class="notes">
 					Promote the cooperattion trough a multi-agent based electronic market.
 					Reduce costs and delays using solutions from the EM
+					Parametros de negociação
+					mercado recebe uma solução disruptiva (que não é a óptima)
+
 				</aside>
 			</section>
 
@@ -253,19 +255,54 @@
 					</table>
 				</div>
 				<aside class="notes">
-					These disruptions can be caused by aircraft malfunctions, crew absenteeism or bad weather, among others.
+					A hipótese que se quer testar é se as soluções obtidas no mercado podem ou não ter uma relção custo-benefício melhor que a solução disruptiva.
 				</aside>
 			</section>
 
 			<section id="methodology">
+				<section id="communication_diagram">
 				<h3>Methodology</h3>
-				<img data-src = "figures/workflow.gif" width="40%"><br>
+				<strong >Communication Diagram</strong><br>
+				<img data-src = "figures/workflow.gif" width="36%"><br>
 				<small>Fig 4: Electronic Market Workflow</small>
 				<aside class="notes">
 					Talvez seja melhor dividir em 2 partes
 					Falta o CBR
+					FORMULAS DAS UTILIDADES
 				</aside>
 			</section>
+
+			<section id="buyer_utility">
+				<h3>Methodology</h3>
+				<strong>Buyer Value Calculation (Utility)</strong><br>
+				<div class="body">
+					<table align="center">
+						<tbody align="center">
+							<tr class="spaceUnder" align="center">
+								<td align="center">$\mu  = \mu_{\alpha}\times \beta + \mu_{\rho} \times (1 - \beta)$</td>
+								</tr>
+								<tr class="spaceUnder" align="center">
+								<td align="center">$\mu_{\alpha} = 1 - \frac{\alpha}{\lambda}$</td>
+								</tr>
+								<tr class="spaceUnder" align="center">
+								<td align="center">$\mu_{\rho} = 1 - \frac{\rho}{\tau}$</td>
+								</tr>
+								<!-- <tr class="spaceUnder">
+								<td>$\mu = \frac{\rho -(1.5 \times \zeta)}{(3 \times \zeta) - (1.5 \times \zeta)}$</td>
+							</tr> -->
+						</tbody>
+					</table>
+				</div>
+				<aside class="notes">
+					A hipótese que se quer testar é se as soluções obtidas no mercado podem ou não ter uma relção custo-benefício melhor que a solução disruptiva.
+				</aside>
+			</section>
+
+			<section id="cbr">
+				<h3>Methodology</h3>
+				<strong>Case-based Reasoning</strong>
+			</section>
+		</section>
 
 			<section id="results">
 				<section id="experiments_overview">
@@ -292,6 +329,9 @@
 					<aside class="notes">
 						In order to validate the market, 3 experiments were made. bla bla bla
 						The next slides show the results obtained in each one
+						Falar do teste set - 12 disrupções de teste, casos reais
+						Recursos reais em que apenas a disponibilidade é gerada de [0,100] e convertida para [0,delay[
+						feitos com 1 buyer e 1 seller, para efeitos de teste, mas a plataforma permite a presença de vários sellers na mesma negociação
 					</aside>
 				</section>
 
@@ -393,7 +433,7 @@
 					</div>
 				</section>
 
-				<!-- <section data-background-image = "http://i.giphy.com/90F8aUepslB84.gif"></section> -->
+				<section data-background-image = "http://i.giphy.com/90F8aUepslB84.gif"></section>
 
 				<section id="future_work">
 					<h3>Future Work</h3>
