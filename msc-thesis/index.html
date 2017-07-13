@@ -97,504 +97,581 @@
 							<div class="col-7">
 								<ul>
 									<li><strong><i>Irregular Operation</i></strong> or <strong><i>Flight Disruption</i></strong>;</li>
-										 <!-- name given to  a flight that for some reason can’t fulfill the planned schedule, causing the flights to be delayed or canceled. -->
-										<br>
-										<li><strong><i>Recovery Process</i></strong> or <strong><i>Disruptions Management</i></strong>;</li>
-											 <!-- The process that tries to minimize irregular operations.  -->
-										<ul>
-										</div>
+									<!-- name given to  a flight that for some reason can’t fulfill the planned schedule, causing the flights to be delayed or canceled. -->
+									<br>
+									<li><strong><i>Recovery Process</i></strong> or <strong><i>Disruptions Management</i></strong>;</li>
+									<!-- The process that tries to minimize irregular operations.  -->
+									<ul>
 									</div>
 								</div>
-						<aside class="notes">
-							No dominio do transporte aero, uma ruptura ou evento/operação irregular é um voo que não consegue cumprir o seu calendario,
-							provocando atrasos ou até o cancelamento de voos.
-							Entre as causas mais frequentes estão avarias nas aeronaves, falta de comparência de tripulantes ou clima desfavorável.
+							</div>
+							<aside class="notes">
+								No dominio do transporte aéreo, uma ruptura ou evento/operação irregular é um voo que não consegue cumprir o seu calendario,
+								provocando atrasos ou até o cancelamento de voos.
+								Entre as causas mais frequentes estão avarias nas aeronaves, falta de comparência de tripulantes ou clima desfavorável.
 
-							Processo de recuperação ou Gestão de Irregularidades operacionais é o processo que tenta minimizar as operações irregulares.
+								Processo de recuperação ou Gestão de Irregularidades operacionais é o processo que tenta minimizar as operações irregulares.
+							</aside>
+						</section>
 
-						</aside>
-					</section>
+						<section id="problem_2">
+							<h3>Problem</h3>
+							<strong>Airline Disruption Management</strong><br><br>
+							Divided in three dimension:<br>
+							<ul>
+								<li>Aircraft;</li>
+								<li>Crew Member;</li>
+								<li>Passenger;</li>
+							</ul>
+							<aside class="notes">
+								Árvore em vez de texto
+								Existem 3 abordagens para resolver o probelma de gestão de interrupções:
+								Sequencial, Integrada e Parcialmente Integrada.
+								Sequencial: São resolvidas em sequência, o que atribui graus de importância às dimensões, sendo que a primeira é a mais importante e o input da segunda é a solução da primeira e por aí em diante.
+								Integrada: Resolve as 3 em simultaneo, isto é, não é atribuido grau de importância a nenhuma das dimensões.
+								Parcialmente Integrada: Resolve qualquer combinação de 2 das dimensões, Integrada  ou Sequencialmente.
+							</aside>
+						</section>
 
-					<section id="problem_2">
-						<h3>Problem</h3>
-						<strong>Airline Disruption Management</strong><br><br>
-						Divided in three dimension:<br>
-						<ul>
-						<li>Aircraft;</li>
-						<li>Crew Member;</li>
-						<li>Passenger;</li>
-						</ul>
-						<aside class="notes">
-							Existem 3 abordagens para resolver o probelma de gestão de interrupções:
-							Sequencial, Integrada e Parcialmente Integrada.
-							Sequencial: São resolvidas em sequência, o que atribui graus de importância às dimensões, sendo que a primeira é a mais importante e o input da segunda é a solução da primeira e por aí em diante.
-							Integrada: Resolve as 3 em simultaneo, isto é, não é atribuido grau de importância a nenhuma das dimensões.
-							Parcialmente Integrada: Resolve qualquer combinação de 2 das dimensões, Integrada  ou Sequencialmente.
-						</aside>
-					</section>
-
-					<section id="problem_3">
-						<h3>Problem</h3>
-						<strong>Airline Disruption Management</strong><br><br>
-						<ul>
-							<li>Due to irregular operations, airline companies lose between 2% and 3% of its annual revenue, every year;</li>
-								 <!-- name given to  a flight that for some reason can’t fulfill the planned schedule, causing the flights to be delayed or canceled. -->
+						<section id="problem_3">
+							<h3>Problem</h3>
+							<strong>Airline Disruption Management</strong><br><br>
+							<ul>
+								<li>Due to irregular operations, airline companies lose between 2% and 3% of its annual revenue, every year;</li>
+								<!-- name given to  a flight that for some reason can’t fulfill the planned schedule, causing the flights to be delayed or canceled. -->
 								<br>
 								<li>Even for small companies, this cost can mean losses of millions of euros.</li>
-									 <!-- The process that tries to minimize irregular operations.  -->
+								<!-- The process that tries to minimize irregular operations.  -->
 								<ul>
-						<aside class="notes">
-							Aqui quero uma image de uma seta dos placards electronicos da bolsa a descer, com estes dois items do lado, como no primeiro slide.
-						</aside>
-					</section>
+									<aside class="notes">
+										Aqui quero uma image de uma seta dos placards electronicos da bolsa a descer, com estes dois items do lado, como no primeiro slide.
+										Estima-se que anualmente, devido a operações irregulares, as companhias aéreas perdem entre 2% a 3% da sua receita anual, o que mesmo
+										para companhias pequenas pode significar perdas a ascender milhares de euros. VALORES DO RELATORIO ANUAL DA TAP DE 2010 PARA DAR IDEIA DA MAGNITUDE
+									</aside>
+								</section>
 
-					<section id="problem_4">
-						<h3>Problem</h3>
-						<strong>Airline Operations Control Centre</strong><br><br>
-						<img data-src="figures/AOCC_Acting_Cycle.gif"  width="57%"><br>
-						<small>Fig 2: AOCC Actying Cycle</small>
-						<aside class="notes">
-							Explicar acting cycle
-							Fazer a devida referencia no gif [Referencia para castro2012 do documento]
-						</aside>
-					</section>
-				</section>
+								<section id="problem_4">
+									<h3>Problem</h3>
+									<strong>Airline Operations Control Centre</strong><br><br>
+									<img data-src="figures/AOCC_Acting_Cycle.gif"  width="57%"><br>
+									<small>Fig 2: AOCC Actying Cycle</small>
+									<aside class="notes">
+										Explicar acting cycle
+										Fazer a devida referencia no gif [Referencia para castro2012 do documento]
+									</aside>
+								</section>
+							</section>
 
-				<section id="motivation">
-					<section id="motivation_1">
-						<h3>Motivation</h3>
-						<strong>Electronic Markets</strong><br>
-						<div class="body">
-							<br>
-							<div class="row" style="text-align: center;">
-								<strong>Motivation 1</strong><br>
-								<i>A better recovery process could reduce the costs in at least 20% of the annual losses due to irregular operations.</i>
-							</div>
-						</div>
-					</section>
+							<section id="motivation">
+								<section id="motivation_1">
+									<h3>Motivation</h3>
+									<strong>Electronic Markets</strong><br>
+									<div class="body">
+										<br>
+										<div class="row" style="text-align: center;">
+											<strong>Motivation 1</strong><br>
+											<i>A better recovery process could reduce the costs in at least 20% of the annual losses due to irregular operations.</i>
+										</div>
+									</div>
+									<aside class="notes">
+										Estudos indicam que um melhor processo de recuperação de operações poderia reduzir em pelo menos 20% as perdas anuais das companhias
+										com operações irregulares.
+										REFERENCIA
+									</aside>
+								</section>
 
-					<section id="motivation_2">
-						<h3>Motivation</h3>
-						<strong>Electronic Markets</strong><br>
-						<div class="body">
-							<br>
-							<div class="row" style="text-align: center;">
-								<strong>Motivation 2</strong><br>
-								<i>At the moment, disruption management only uses a company’s own resources (aircraft and crew members).</i>
-							</div>
-						</div>
-					</section>
+								<section id="motivation_2">
+									<h3>Motivation</h3>
+									<strong>Electronic Markets</strong><br>
+									<div class="body">
+										<br>
+										<div class="row" style="text-align: center;">
+											<strong>Motivation 2</strong><br>
+											<i>At the moment, disruption management only uses a company’s own resources (aircraft and crew members).</i>
+										</div>
+									</div>
+									<aside class="notes">
+										De momento, a  Gestão de Irregularidades operacionais apenas utiliza recursos da empresa lesada para resolver disrupções.
+									</aside>
+								</section>
 
-					<section id="motivation_3">
-						<h3>Motivation</h3>
-						<strong>Electronic Markets</strong><br>
-						<div class="body">
-							<br>
-							<div class="row" style="text-align: center;">
-								<strong>Motivation 3</strong><br>
-								<i>Due to the lack of collaboration between airline companies, operations recovery works in a more restrict solution space.</i>
-							</div>
-						</div>
-					</section>
-					<aside class="notes">
-						Electronic Markets are the foundation of electronic commerce and are defined as an inter-organizational information
-						system that allows the participants to exchange information about prices and information, products and services.[1]
-					</aside>
-				</section>
+								<section id="motivation_3">
+									<h3>Motivation</h3>
+									<strong>Electronic Markets</strong><br>
+									<div class="body">
+										<br>
+										<div class="row" style="text-align: center;">
+											<strong>Motivation 3</strong><br>
+											<i>Due to the lack of collaboration between airline companies, operations recovery works in a more restrict solution space.</i>
+										</div>
+									</div>
+								</section>
+								<aside class="notes">
+									Devido à falta de colaboração entre companhias aéreas, o processo de recuperação de operações actua num espaço de soluções mais restrito.
+								</aside>
+							</section>
 
-			<section id="related_work">
-				<h3>Related Work</h3>
-				<strong>MASDIMA</strong><br>
-				<img data-src="figures/AOC_MASDIMA.png"  width="79%"><br>
-				<small>Fig 3: MASDIMA Architecture</small>
-				<aside class="notes">
-					Devida referencia na imagem [Referencia para castro2012 do documento]
-					Como esta dissertação  é complementar à dissertaçao de Doutoromento do co-orientador, António Castro, Alguma da literatura revista passa pelo
-					Sistema Multi-Agente sugerido, para substituir as tarefas do Centro de Controlo de Operações, tendo sempre a supervisão deste.
-					Este Sistema considera 2 abordagens, Abordagem Negociação-Q Generica e Abordagem Sequencial tradicional , ambas com melhor desempenho que o CCO.
-					A diferença entre as 2 abordagens está no facto de na abordagem sequencial tradicional serem usados varios algoritmos como ilustrado,
-					para as diferentes dimensões e na abordagem Negociação-Q Genérica é o uso da negociação como mecanismo de decisão para obter a solução final.
-				</aside>
-			</section>
+							<section id="related_work">
+								<h3>Related Work</h3>
+								<strong>MASDIMA</strong><br>
+								<img data-src="figures/AOC_MASDIMA.png"  width="79%"><br>
+								<small>Fig 3: MASDIMA Architecture</small>
+								<aside class="notes">
+									Devida referencia na imagem [Referencia para castro2012 do documento]
+									Como esta dissertação  é complementar à dissertaçao de Doutoromento do co-orientador, António Castro, Alguma da literatura revista passa pelo
+									Sistema Multi-Agente sugerido, para substituir as tarefas do Centro de Controlo de Operações, tendo sempre a supervisão deste.
+									Este Sistema considera 2 abordagens, Abordagem Negociação-Q Generica e Abordagem Sequencial tradicional , ambas com melhor desempenho que o CCO.
+									A diferença entre as 2 abordagens está no facto de na abordagem sequencial tradicional serem usados varios algoritmos como ilustrado,
+									para as diferentes dimensões e na abordagem Negociação-Q Genérica é o uso da negociação como mecanismo de decisão para obter a solução final.
+								</aside>
+							</section>
 
-			<section id="goals">
-				<h3>Goals</h3>
-				<div class="body">
-					<table>
-						<tbody>
-							<tr class="spaceUnder">
-								<td>$\mathcal{G}_1$.</td>
-								<td>Promote cooperation between airline companies to expand their solutions space;</td>
-							</tr>
-							<tr class="spaceUnder">
-								<td>$\mathcal{G}_2$.</td>
-								<td>Reduce disruptions costs and delays using solutions present in the generated space.</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<aside class="notes">
-					Promote the cooperattion trough a multi-agent based electronic market.
-					Reduce costs and delays using solutions from the EM
-					Parametros de negociação
-					mercado recebe uma solução disruptiva (que não é a óptima)
+							<section id="goals">
+								<h3>Goals</h3>
+								<div class="body">
+									<table>
+										<tbody>
+											<tr class="spaceUnder">
+												<td>$\mathcal{G}_1$.</td>
+												<td>Promote cooperation between airline companies to expand their solutions space;</td>
+											</tr>
+											<tr class="spaceUnder">
+												<td>$\mathcal{G}_2$.</td>
+												<td>Reduce disruptions costs and delays using solutions present in the generated space.</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<aside class="notes">
+									Os objectivos são promover a colaboração entre as companhias aéreas para expandir o seu espaço de soluções e
+									reduzir os custos e atrasos provocados pelas disrupções, com soluções encontradas no espaço gerado.
+									Promote the cooperattion trough a multi-agent based electronic market.
+									Reduce costs and delays using solutions from the EM
+									Parametros de negociação
+									mercado recebe uma solução disruptiva (que não é a óptima)
 
-				</aside>
-			</section>
+								</aside>
+							</section>
 
-			<section id="hypothesis">
-				<h3>Hypothesis</h3>
-				<div class="body" >
-					<table>
-						<tbody>
-							<tr class="spaceUnder">
-								<td>$\mathcal{H}$.</td>
-								<td>The solutions obtained through the EM can be <u>more cost-effective</u> than the solutions obtained with each company's own resources;</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<aside class="notes">
-					A hipótese que se quer testar é se as soluções obtidas no mercado podem ou não ter uma relção custo-benefício melhor que a solução disruptiva.
-				</aside>
-			</section>
+							<section id="hypothesis">
+								<h3>Hypothesis</h3>
+								<div class="body" >
+									<table>
+										<tbody>
+											<tr class="spaceUnder">
+												<td>$\mathcal{H}$.</td>
+												<td>The solutions obtained through the EM can be <u>more cost-effective</u> than the solutions obtained with each company's own resources;</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<aside class="notes">
+									A hipótese que se quer testar é se as soluções obtidas no mercado podem ou não ter uma relção custo-benefício melhor que a solução disruptiva.
+								</aside>
+							</section>
+							<!-- no container das três cenas metes
+							display:flex
+							flex-direction:column
+							e metes os três elementos pela ordem que queres
+							se quiseres que fiquem todos alinhados à esquerda/centro metes align-items:center
+							e podes em cada um deles fazer override desta última opção com align-self -->
+							<section id="methodology">
+								<section id="communication_diagram">
+									<div class="body">
+										<h3>Methodology</h3>
+										<strong  class="slide_title" >Communication Diagram</strong>
+										<img data-src = "figures/workflow.gif" width="41%">
+										<small>Fig 4: Electronic Market Workflow</small>
+										<aside class="notes">
+											Alt+Click para zoom, se necessário
+											Falta o CBR
+										</aside>
+									</div>
+								</section>
 
-			<section id="methodology">
-				<section id="communication_diagram">
-				<h3>Methodology</h3>
-				<strong >Communication Diagram</strong><br>
-				<img data-src = "figures/workflow.gif" width="36%"><br>
-				<small>Fig 4: Electronic Market Workflow</small>
-				<aside class="notes">
-					Talvez seja melhor dividir em 2 partes
-					Falta o CBR
-					FORMULAS DAS UTILIDADES
-				</aside>
-			</section>
+								<section id="buyer_utility">
+									<h3>Methodology</h3>
+									<strong>Buyer Value Calculation (Utility)</strong><br>
+									<div class="body">
+										<table>
+											<tbody>
+												<tr class="spaceUnder">
+													<td>$\mu  = \mu_{\alpha}\times \beta + \mu_{\rho} \times (1 - \beta)$</td>
+												</tr>
+												<tr class="spaceUnder">
+													<td>$\mu_{\alpha} = 1 - \frac{\alpha}{\lambda}$</td>
+												</tr>
+												<tr class="spaceUnder">
+													<td>$\mu_{\rho} = 1 - \frac{\rho}{\tau}$</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<aside class="notes">
+										mu_alpha é a utilidade da disponbilidade, beta é o peso da disponiblidade no cálculo da utilidade, mu_rho é a utilidade do preço
+										alpha é a disponibilidade,
+										lambda é o atraso que se quer minimizar
+										rho é o preço proposto pelo seller
+										tau é o custo da disrupção (lançada no mercado)
+										As formulas das utilidades de disponibilidade e preço são 1 - a razao entre os dois mostrados para garantir que o valor da utilidade varia consoate a solução,
+										isto é, se a divisão de alpha/lambda ou rho/tau tender para 0, significa que a solução tende para a óptima (custo 0 e atraso 0), se 1 for quer dizer que é a
+										pior solução possível, porque as parcelas são iguais alpha=lambda ou rho=tau
+									</aside>
+								</section>
 
-			<section id="buyer_utility">
-				<h3>Methodology</h3>
-				<strong>Buyer Value Calculation (Utility)</strong><br>
-				<div class="body">
-					<table align="center">
-						<tbody align="center">
-							<tr class="spaceUnder" align="center">
-								<td align="center">$\mu  = \mu_{\alpha}\times \beta + \mu_{\rho} \times (1 - \beta)$</td>
-								</tr>
-								<tr class="spaceUnder" align="center">
-								<td align="center">$\mu_{\alpha} = 1 - \frac{\alpha}{\lambda}$</td>
-								</tr>
-								<tr class="spaceUnder" align="center">
-								<td align="center">$\mu_{\rho} = 1 - \frac{\rho}{\tau}$</td>
-								</tr>
-								<!-- <tr class="spaceUnder">
-								<td>$\mu = \frac{\rho -(1.5 \times \zeta)}{(3 \times \zeta) - (1.5 \times \zeta)}$</td>
-							</tr> -->
-						</tbody>
-					</table>
-				</div>
-				<aside class="notes">
-					A hipótese que se quer testar é se as soluções obtidas no mercado podem ou não ter uma relção custo-benefício melhor que a solução disruptiva.
-				</aside>
-			</section>
+								<section id="seller_utility">
+									<h3>Methodology</h3>
+									<strong>Seller Value Calculation (Utility)</strong><br>
+									<div class="body">
+										<table>
+											<tbody>
+												<tr class="spaceUnder">
+													<td>$\mu = \frac{\rho -(1.5 \times \zeta)}{(3 \times \zeta) - (1.5 \times \zeta)}$</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<aside class="notes">
+										rho é o preço proposto, zeta é o custo associado ao empréstimo dos recursos. Isto contempla os salários dos tripulantes, ou em cenários em que é pedido
+										um avião, contempla também combustível, manutenção, custos de movimentção da aeronave no aeroporto e ainda custos associados à viagem (cost per mile).
+										1.5 e 3 são os factores de preço minimo e máximo.
+										O preço de uma proposa a fazer é calculado através da sua disponibilidade. Quanto melhor a disponibilidade, mais caro será o recurso, pelo que o preço e a
+										disponibilidade são inversamente proporcionais (uma vez que uma disponibilidade de 0 quer dizer um voo que está disponível à hora de partida.) Um factor de preço
+										é calculado então em função da disponibilidade e depois multiplicado pelo custo associado ao empréstimo dos recursos, e obtém-se assim o preço a propor.
+										FORMULA DEPOIS DAS REFERENCIAS
+									</aside>
+								</section>
 
-			<section id="cbr">
-				<h3>Methodology</h3>
-				<strong>Case-based Reasoning</strong>
-			</section>
-		</section>
+								<section id="cbr">
+									<h3>Methodology</h3>
+									<strong>Case-based Reasoning</strong>
+									<div class="body">
+										<ul>
+											<li>"A case-based reasoner solves problems by using or adapting solutions to old problems."[RS13];</li><br>
+											<li>The similiarity between two experiences is calculated through the euclidean distance between both.</li>
+										</ul>
+										<table>
+											<tbody>
+												<tr class="spaceUnder">
+													<td>$ d(\kappa,\chi) = \sum_{\eta=1}^{\psi}{\sqrt{(\kappa_{\eta} - \chi_{\eta})^2} \times \varepsilon}$</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<aside class="notes">
+										O Case-based Reasoning é um método para resolver problemas utilizando ou adaptando soluções de problemas anteriores. Funciona com base na igualdade de problemas e
+										aplica ou adpata a solução de um problema igual, já resolvido, ao problema atual. No caso específico desta dissertação, foi aplicado no processamento de propostas
+										por parte do agente vendedor, sendo que cada ronda de negociação corresponde a um caso/problema. A similaridade entre casos/problemas é feita através da distância
+										euclideana. Foram consideradas como características de cada caso/problema o feedback dado pelo buyer, o número de vendedores na negociação e o recurso a ser negociado.
+										kappa é o caso/problema actual
+										chi é um caso/problema anterior
+										eta é a característica que está a ser comparada no momento
+										psi é o número total de características de um caso
+										varepsilon é o peso da característica a ser comparada no momento
+										SOFTMAX PARA DEPOIS DAS REFERENCIAS OU AQUI? OU FALA-SE AQUI E FORMULA PARA AS REFERENCIAS?
+									</aside>
+								</section>
+							</section>
 
-			<section id="results">
-				<section id="experiments_overview">
-					<h3>Results</h3>
-					<strong>Experiments</strong><br><br>
-					<div class="body">
-						<table>
-							<tbody>
-								<tr class="spaceUnder">
-									<td>$\mathcal{E}_1$.</td>
-									<td>50-50 Experiment</td>
-								</tr>
-								<tr class="spaceUnder">
-									<td>$\mathcal{E}_2$.</td>
-									<td>80-20 Experiment</td>
-								</tr>
-								<tr class="spaceUnder">
-									<td>$\mathcal{E}_3$.</td>
-									<td>20-80 Experiment</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-					<aside class="notes">
-						In order to validate the market, 3 experiments were made. bla bla bla
-						The next slides show the results obtained in each one
-						Falar do teste set - 12 disrupções de teste, casos reais
-						Recursos reais em que apenas a disponibilidade é gerada de [0,100] e convertida para [0,delay[
-						feitos com 1 buyer e 1 seller, para efeitos de teste, mas a plataforma permite a presença de vários sellers na mesma negociação
-					</aside>
-				</section>
+							<section id="results">
+								<section id="experiments_overview">
+									<h3>Results</h3>
+									<strong>Experiments</strong><br><br>
+									<div class="body">
+										<table>
+											<tbody>
+												<tr class="spaceUnder">
+													<td>$\mathcal{E}_1$.</td>
+													<td>50-50 Experiment</td>
+												</tr>
+												<tr class="spaceUnder">
+													<td>$\mathcal{E}_2$.</td>
+													<td>80-20 Experiment</td>
+												</tr>
+												<tr class="spaceUnder">
+													<td>$\mathcal{E}_3$.</td>
+													<td>20-80 Experiment</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<aside class="notes">
+										De modo a validar o mercado foram realizadas três experiências:
+										A primeira valoriza igualmente os dois atributos em negociação,(50-50)
+										A segunda valoriza a disponibilidade em 80% e o custo em 20%
+										A terceira valoriza a disponibilidade em 20% e o custo em 80%
+										O teste set foi composto por 12 disrupções de teste, casos reais fornecidos pelo co-orientador (dados da TAP?),
+										Recursos reais em que apenas a disponibilidade é gerada de [0,100] e convertida para [0,delay[
+										As experiências foram feitas com 1 buyer e 1 seller, para efeitos de teste, mas a plataforma permite a presença de vários sellers na mesma negociação
+									</aside>
+								</section>
 
-				<section id="experiment_1">
-					<h3>Results</h3>
-					<strong>Experiment 1 (50-50)</strong><br>
-					<img data-src = "figures/experiment1.png" width="70%">
-					<small>Fig 5: Experiment 1 Results</small>
+								<section id="experiment_1">
+									<h3>Results</h3>
+									<strong>Experiment 1 (50-50)</strong><br>
+									<img data-src = "figures/experiment1.png" width="70%">
+									<small>Fig 5: Experiment 1 Results</small>
+								</section>
 
-				</section>
+								<section id="experiment_2">
+									<h3>Results</h3>
+									<strong>Experiment 2 (80-20)</strong><br>
+									<img data-src = "figures/experiment2.png" width="70%">
+									<small>Fig 6: Experiment 2 Results</small>
+								</section>
 
-				<section id="experiment_2">
-					<h3>Results</h3>
-					<strong>Experiment 2 (80-20)</strong><br>
-					<img data-src = "figures/experiment2.png" width="70%">
-					<small>Fig 6: Experiment 2 Results</small>
-				</section>
+								<section id="experiment_3">
+									<h3>Results</h3>
+									<strong>Experiment 3 (20-80)</strong><br>
+									<img data-src = "figures/experiment3.png" width="70%">
+									<small>Fig 7: Experiment 3 Results</small>
+								</section>
 
-				<section id="experiment_3">
-					<h3>Results</h3>
-					<strong>Experiment 3 (20-80)</strong><br>
-					<img data-src = "figures/experiment3.png" width="70%">
-					<small>Fig 7: Experiment 3 Results</small>
-				</section>
+								<section id="comparisons_overview">
+									<h3>Results</h3>
+									<strong>Comparisons</strong><br><br>
+									<div class="body">
+										<table>
+											<tbody>
+												<tr class="spaceUnder">
+													<td>$\mathcal{C}_1$.</td>
+													<td>Experiment 1 - Experiment 2</td>
+												</tr>
+												<tr class="spaceUnder">
+													<td>$\mathcal{C}_2$.</td>
+													<td>Experiment 1 - Experiment 3</td>
+												</tr>
+												<tr class="spaceUnder">
+													<td>$\mathcal{C}_3$.</td>
+													<td>Experiment 2 - Experiment 3</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<aside class="notes">
+										Os resultados das experiências feitas foram posteriormente comparados para tentar perceber se existia uma atribuição de pesos à fórmula da
+										utilidade do comprador, que fosse melhor que as outras.
+									</aside>
+								</section>
 
-				<section id="comparisons_overview">
-					<h3>Results</h3>
-					<strong>Comparisons</strong><br><br>
-					<div class="body">
-						<table>
-							<tbody>
-								<tr class="spaceUnder">
-									<td>$\mathcal{C}_1$.</td>
-									<td>Experiment 1 - Experiment 2</td>
-								</tr>
-								<tr class="spaceUnder">
-									<td>$\mathcal{C}_2$.</td>
-									<td>Experiment 1 - Experiment 3</td>
-								</tr>
-								<tr class="spaceUnder">
-									<td>$\mathcal{C}_3$.</td>
-									<td>Experiment 2 - Experiment 3</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-					<aside class="notes">
-						Promote the cooperattion trough a multi-agent based electronic market.
-						Reduce costs and delays using solutions from the EM
-					</aside>
-				</section>
+								<section id="comparison_1">
+									<h3>Results</h3>
+									<strong>Comparison 1</strong><br>
+									<img data-src = "figures/Exp1-Exp2.png" width="70%">
+									<small>Fig 8: Comparison 1 Results</small>
+								</section>
 
-				<section id="comparison_1">
-					<h3>Results</h3>
-					<strong>Comparison 1</strong><br>
-					<img data-src = "figures/Exp1-Exp2.png" width="70%">
-					<small>Fig 8: Comparison 1 Results</small>
-				</section>
+								<section id="comparison_2">
+									<h3>Results</h3>
+									<strong>Comparison 2</strong><br>
+									<img data-src = "figures/Exp1-Exp3.png" width="70%">
+									<small>Fig 9: Comparison 2 Results</small>
+								</section>
 
-				<section id="comparison_2">
-					<h3>Results</h3>
-					<strong>Comparison 2</strong><br>
-					<img data-src = "figures/Exp1-Exp3.png" width="70%">
-					<small>Fig 9: Comparison 2 Results</small>
-				</section>
+								<section id="comparison_3">
+									<h3>Results</h3>
+									<strong>Comparison 3</strong><br>
+									<img data-src = "figures/Exp2-Exp3.png" width="70%">
+									<small>Fig 10: Comparison 3 Results</small>
+								</section>
 
-				<section id="comparison_3">
-					<h3>Results</h3>
-					<strong>Comparison 3</strong><br>
-					<img data-src = "figures/Exp2-Exp3.png" width="70%">
-					<small>Fig 10: Comparison 3 Results</small>
-				</section>
+								<section id="costs_and_savings">
+									<h3>Results</h3>
+									<strong>Costs and Savings</strong><br>
+									<img data-src = "figures/costs_and_savings.png" width="69%">
+									<small>Fig 11: Costs and Savings Results</small>
+								</section>
+							</section>
 
-				<section id="costs_and_savings">
-					<h3>Results</h3>
-					<strong>Costs and Savings</strong><br>
-					<img data-src = "figures/costs_and_savings.png" width="69%">
-					<small>Fig 11: Costs and Savings Results</small>
-				</section>
-			</section>
+							<section id="easter_egg_coming">
+								<h3>Conclusion</h3>
+								<div class="body">
+									<table>
+										<tbody>
+											<tr class="spaceUnder">
+												<td>Mean Delay Reduction of 66.85% and Mean Cost Reduction of 63.51%.</td>
+											</tr>
+											<tr class="spaceUnder">
+												<td>The results obtained are promising, but further testing is needed, with real time intervals for availability and more test cases.</td>
+											</tr>
+											<tr class="spaceUnder">
+												<td>Success rate of 91.7%, 67.7% considering availability only.</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<aside class="notes">
+									Com recurso ao mercado eletrónico é possível observar que as soluções propostas pelo mercado (das três experiências realizadas) têm uma redução
+									média do atraso de 66.85% e uma redução de 63.51% do custo em relação às soluções disruptivas (as que foram lançadas no mercado para tentar minimizar)
+									Os resultados obtidos são muito promissores mas é necessário fazer mais testes, com intervalos de disponibilidade reais e mais casos de teste.
+									Com estes resultados comprava-se uma taxa de sucesso de 91.7% na minimização dos custos e uma taxa de sucesso de 67.7% considerando como caso bem sucedido um caso
+									em que tanto atraso como custo são minimizados, isto é, 11 em 12 disrupções testadas viram os seus custos minimizados mas apenas 8 em 12 viram o seu atraso minimizado.
+								</aside>
+							</section>
 
-			<section id="easter_egg_coming">
-				<h3>Conclusion</h3>
-				<div class="body">
-					<table>
-						<tbody>
-							<tr class="spaceUnder">
-								<td>The results obtained are promising, but further testing is needed, with real time intervals for availability and more test cases.</td>
-							</tr>
-							<tr class="spaceUnder">
-								<td>Mean Delay Reduction of 66.85% and Mean Cost Reduction of 63.51%.</td>
-							</tr>
-							<tr class="spaceUnder">
-								<td>Success rate of 91.7%, 67.7% considering availability only.
-									(11 in 12 disruptions had theirs cost reduced using at least one of the scenarios tested, 8 considering availability only).</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</section>
+							<section data-background-image = "http://i.giphy.com/90F8aUepslB84.gif"></section>
 
-				<section data-background-image = "http://i.giphy.com/90F8aUepslB84.gif"></section>
+							<section id="future_work">
+								<h3>Future Work</h3>
+								<ul style="text-align: center; list-style: none; padding: 0; margin: 0;">
+									<li>Usage of different learning approches;</li>
+									<li>Integration in MASDIMA;</li>
+									<li>Usage of heuristics to combine the resources;</li>
+									<li>Usage of trust models;</li>
+									<li>Graphical Interface.</li>
+								</ul>
+							</section>
 
-				<section id="future_work">
-					<h3>Future Work</h3>
-					<ul style="text-align: center; list-style: none; padding: 0; margin: 0;">
-						<li>Usage of different learning approches;</li>
-						<li>Integration in MASDIMA;</li>
-						<li>Usage of heuristics to combine the resources;</li>
-						<li>Usage of trust models;</li>
-						<li>Graphical Interface.</li>
-					</ul>
-				</section>
-
-				<section id="references">
-					<h3>References</h3>
-					<br>
-				</section>
-
-				<section id="final">
-					<h3>Thank You</h3>
-						<br>
-						<div>
-							<small>
-								Luís Reis, <i>University of Porto</i>
+							<section id="references">
+								<h3>References</h3>
 								<br>
-								Email: brochadoluis@gmail.com
-								<br>
-								<strong>Supervision</strong>
-								<br>
-								Ana Paula Rocha, PhD, <i>University of Porto</i>
-								<br>
-								António Castro, PhD, <i>University of Porto</i>
-								<br>
-							</small>
-						</div>
-				</section>
+								[RS13] Christopher K Riesbeck and Roger C Schank. <i>Inside case-based reasoning</i>. Psychology Press, 2013.
+							</section>
 
-				<!-- <section>Single Horizontal Slide</section>
-				<section>
-					<section>Vertical Slide 1</section>
-					<section>
-						## Page title2
-						<br><br><br>
-						A paragraph with some text and a [link](http://hakim.se).
+							<section id="final">
+								<h3>Thank You</h3>
+								<br>
+								<div>
+									<small>
+										Luís Reis, <i>University of Porto</i>
+										<br>
+										Email: brochadoluis@gmail.com
+										<br>
+										<strong>Supervision</strong>
+										<br>
+										Ana Paula Rocha, PhD, <i>University of Porto</i>
+										<br>
+										António Castro, PhD, <i>University of Porto</i>
+										<br>
+									</small>
+								</div>
+							</section>
+
+							<!-- <section>Single Horizontal Slide</section>
+							<section>
+							<section>Vertical Slide 1</section>
+							<section>
+							## Page title2
+							<br><br><br>
+							A paragraph with some text and a [link](http://hakim.se).
+						</section>
 					</section>
-				</section>
-				<section data-markdown>
+					<section data-markdown>
 					<textarea data-template>
-						## Page title
-						<br><br><br>
-						A paragraph with some text and a [link](http://hakim.se).
-					</textarea>
-				</section>
-				<section data-markdown>
-					<script type="text/template"> -->
-						<!-- - Item 1 <!-- .element: class="fragment" data-fragment-index="1" -->
-						<!-- - Item 2 <!-- .element: class="fragment" data-fragment-index="2" -->
-						<!-- - Item 3 <!-- .element: class="fragment" data-fragment-index="2" -->
-						<!-- - Item 4 <!-- .element: class="fragment" data-fragment-index="2" -->
-					<!-- </script>
-				</section>
-				<section data-markdown>
-					<script type="text/template">
-						<!-- .slide: data-background="#ff0000"
-						Markdown content
-					</script>
-				</section>
-				<section>
-					<p class="fragment grow">grow</p>
-					<p class="fragment shrink">shrink</p>
-					<p class="fragment fade-out">fade-out</p>
-					<p class="fragment fade-up">fade-up (also down, left and right!)</p>
-					<p class="fragment current-visible">visible only once</p>
-					<p class="fragment highlight-current-blue">blue only once</p>
-					<p class="fragment highlight-red">highlight-red</p>
-					<p class="fragment highlight-green">highlight-green</p>
-					<p class="fragment highlight-blue">highlight-blue</p>
-				</section>
-				<section data-background-image = "http://i.giphy.com/90F8aUepslB84.gif">
-				</section>
-				<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-video-loop data-background-video-muted>
-				</section>
-				<section data-background-iframe="https://slides.com" data-background-interactive>
-					<h2>Iframe</h2>
-				</section>
-				<section data-transition="slide">
-					The train goes on …
-				</section>
-				<section data-transition="slide">
-					<video data-autoplay src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"></video>
-				</section>
-				<section data-transition="slide-in fade-out">
-					<section>
-						<h2>This video will use up the remaining space on the slide</h2>
-						<video class="stretch" src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"></video>
-					</section>
-				</section>
-				<section data-transition="fade-in slide-out">
-					(Passengers entering and leaving)
-				</section>
-				<section data-transition="slide">
-					And it starts again.
-					<a href="#/2/2">Link</a>
-					<a href="#/some-slide">Link</a>
-				</section>
-				<section>
-					<span class="fragment fade-in">
-						<span class="fragment fade-out">I'll fade in, then out</span>
-					</span>
-				</section>
-				<section>
-					<p class="fragment" data-fragment-index="3">Appears last</p>
-					<p class="fragment" data-fragment-index="1">Appears first</p>
-					<p class="fragment" data-fragment-index="2">Appears second</p>
-				</section>
-				<section>
-					<pre><code data-trim data-noescape>
-						(def lazy-fib
-						(concat
-						[0 1]
-						<mark>((fn rfib [a b]</mark>
-						(lazy-cons (+ a b) (rfib b (+ a b)))) 0 1)))
-					</code></pre>
-				</section> -->
-			</div>
-		</div>
+					## Page title
+					<br><br><br>
+					A paragraph with some text and a [link](http://hakim.se).
+				</textarea>
+			</section>
+			<section data-markdown>
+			<script type="text/template"> -->
+			<!-- - Item 1 <!-- .element: class="fragment" data-fragment-index="1" -->
+			<!-- - Item 2 <!-- .element: class="fragment" data-fragment-index="2" -->
+			<!-- - Item 3 <!-- .element: class="fragment" data-fragment-index="2" -->
+			<!-- - Item 4 <!-- .element: class="fragment" data-fragment-index="2" -->
+			<!-- </script>
+		</section>
+		<section data-markdown>
+		<script type="text/template">
+		<!-- .slide: data-background="#ff0000"
+		Markdown content
+	</script>
+</section>
+<section>
+<p class="fragment grow">grow</p>
+<p class="fragment shrink">shrink</p>
+<p class="fragment fade-out">fade-out</p>
+<p class="fragment fade-up">fade-up (also down, left and right!)</p>
+<p class="fragment current-visible">visible only once</p>
+<p class="fragment highlight-current-blue">blue only once</p>
+<p class="fragment highlight-red">highlight-red</p>
+<p class="fragment highlight-green">highlight-green</p>
+<p class="fragment highlight-blue">highlight-blue</p>
+</section>
+<section data-background-image = "http://i.giphy.com/90F8aUepslB84.gif">
+</section>
+<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-video-loop data-background-video-muted>
+</section>
+<section data-background-iframe="https://slides.com" data-background-interactive>
+<h2>Iframe</h2>
+</section>
+<section data-transition="slide">
+The train goes on …
+</section>
+<section data-transition="slide">
+<video data-autoplay src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"></video>
+</section>
+<section data-transition="slide-in fade-out">
+<section>
+<h2>This video will use up the remaining space on the slide</h2>
+<video class="stretch" src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"></video>
+</section>
+</section>
+<section data-transition="fade-in slide-out">
+(Passengers entering and leaving)
+</section>
+<section data-transition="slide">
+And it starts again.
+<a href="#/2/2">Link</a>
+<a href="#/some-slide">Link</a>
+</section>
+<section>
+<span class="fragment fade-in">
+<span class="fragment fade-out">I'll fade in, then out</span>
+</span>
+</section>
+<section>
+<p class="fragment" data-fragment-index="3">Appears last</p>
+<p class="fragment" data-fragment-index="1">Appears first</p>
+<p class="fragment" data-fragment-index="2">Appears second</p>
+</section>
+<section>
+<pre><code data-trim data-noescape>
+(def lazy-fib
+(concat
+[0 1]
+<mark>((fn rfib [a b]</mark>
+(lazy-cons (+ a b) (rfib b (+ a b)))) 0 1)))
+</code></pre>
+</section> -->
+</div>
+</div>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
 
-		<script>
-		// More info about config & dependencies:
-		// - https://github.com/hakimel/reveal.js#configuration
-		// - https://github.com/hakimel/reveal.js#dependencies
-		Reveal.initialize({
-			// Display the page number of the current slide
-			slideNumber: 'c/t', // false
+<script>
+// More info about config & dependencies:
+// - https://github.com/hakimel/reveal.js#configuration
+// - https://github.com/hakimel/reveal.js#dependencies
+Reveal.initialize({
+	// Display the page number of the current slide
+	slideNumber: 'c/t', // false
 
-			// Push each slide change to the browser history
-			history: true, // false
+	// Push each slide change to the browser history
+	history: true, // false
 
-			// Vertical centering of slides
-			center: true, // false
+	// Vertical centering of slides
+	center: true, // false
 
-			// Transition style
-			transition: 'fade', // none/fade/slide/convex/concave/zoom
-			dependencies: [
-				// Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
-				{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-				// Interpret Markdown in <section> elements
-				{ src: 'plugin/markdown/marked.js' },
-				{ src: 'plugin/markdown/markdown.js' },
-				// Syntax highlight for <code> elements
-				{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-				// Zoom in and out with Alt+click
-				{ src: 'plugin/zoom-js/zoom.js', async: true },
-				// Speaker notes
-				{ src: 'plugin/notes/notes.js', async: true },
-				// MathJax
-				{ src: 'plugin/math/math.js', async: true }
-			]
-		});
-		</script>
-	</body>
-	</html>
+	// Transition style
+	transition: 'fade', // none/fade/slide/convex/concave/zoom
+	dependencies: [
+		// Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
+		{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+		// Interpret Markdown in <section> elements
+		{ src: 'plugin/markdown/marked.js' },
+		{ src: 'plugin/markdown/markdown.js' },
+		// Syntax highlight for <code> elements
+		{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+		// Zoom in and out with Alt+click
+		{ src: 'plugin/zoom-js/zoom.js', async: true },
+		// Speaker notes
+		{ src: 'plugin/notes/notes.js', async: true },
+		// MathJax
+		{ src: 'plugin/math/math.js', async: true }
+	]
+});
+</script>
+</body>
+</html>

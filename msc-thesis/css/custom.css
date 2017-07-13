@@ -127,12 +127,31 @@ body {
 }
 
 /*********************************************
+* METHODOLOGY TITLES
+*********************************************/
+
+#communication_diagram strong.slide_title {
+	font-size: 0.4em;
+}
+
+#communication_diagram div {
+	display:flex;
+	flex-direction:column;
+	align-items:center
+}
+
+/*********************************************
 * TALBES SPACEMENT
 *********************************************/
 
 tr.spaceUnder>td {
 padding-top: 1em;
 padding-bottom: 1em;
+}
+
+#methodology td {
+  text-align: center;
+  vertical-align: middle;
 }
 
 /*********************************************
