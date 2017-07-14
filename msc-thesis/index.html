@@ -95,7 +95,7 @@
 									<li><strong><i>Irregular Operation</i></strong> or <strong><i>Flight Disruption</i></strong>;</li>
 									<!-- name given to  a flight that for some reason can’t fulfill the planned schedule, causing the flights to be delayed or canceled. -->
 									<br>
-									<li><strong><i>Recovery Process</i></strong> or <strong><i>Disruptions Management</i></strong>;</li>
+									<li><strong><i>Recovery Process</i></strong> or <strong><i>Disruption Management</i></strong>;</li>
 									<!-- The process that tries to minimize irregular operations.  -->
 									<ul>
 									</div>
@@ -113,7 +113,7 @@
 						<section id="problem_2">
 							<h3>Problem</h3>
 							<strong>Airline Disruption Management</strong><br><br>
-							Divided in three dimension:<br>
+							Divided in three dimensions:<br>
 							<ul>
 								<li>Aircraft;</li>
 								<li>Crew Member;</li>
@@ -142,7 +142,7 @@
 									<aside class="notes">
 										Aqui quero uma imagem de uma seta dos placards electronicos da bolsa a descer, com estes dois items do lado, como no primeiro slide.
 										Estima-se que anualmente, devido a operações irregulares, as companhias aéreas perdem entre 2% a 3% da sua receita anual, o que mesmo
-										para companhias pequenas pode significar perdas a ascender milhares de euros. VALORES DO RELATORIO ANUAL DA TAP DE 2010 PARA DAR IDEIA DA MAGNITUDE
+										para companhias pequenas pode significar perdas a ascender milhares de euros.
 									</aside>
 								</section>
 
@@ -210,16 +210,18 @@
 							<section id="related_work">
 								<h3>Related Work</h3>
 								<strong>MASDIMA</strong><br>
-								<img data-src="figures/AOC_MASDIMA.png"  width="79%"><br>
-								<small>Fig 3: MASDIMA Architecture</small>
-								<aside class="notes">
-									Devida referencia na imagem [Referencia para castro2012 do documento]
-									Como esta dissertação  é complementar à dissertaçao de Doutoromento do co-orientador, António Castro, Alguma da literatura revista passa pelo
-									Sistema Multi-Agente sugerido, para substituir as tarefas do Centro de Controlo de Operações, tendo sempre a supervisão deste.
-									Este Sistema considera 2 abordagens, Abordagem Negociação-Q Generica e Abordagem Sequencial tradicional , ambas com melhor desempenho que o CCO.
-									A diferença entre as 2 abordagens está no facto de na abordagem sequencial tradicional serem usados varios algoritmos como ilustrado,
-									para as diferentes dimensões e na abordagem Negociação-Q Genérica é o uso da negociação como mecanismo de decisão para obter a solução final.
-								</aside>
+								<div class="body">
+									<img data-src="figures/AOC_MASDIMA.png"  width="79%"><br>
+									<small>Fig 3: MASDIMA Architecture</small>
+									<aside class="notes">
+										Devida referencia na imagem [Referencia para castro2012 do documento]
+										Como esta dissertação  é complementar à dissertaçao de Doutoromento do co-orientador, António Castro, Alguma da literatura revista passa pelo
+										Sistema Multi-Agente sugerido, para substituir as tarefas do Centro de Controlo de Operações, tendo sempre a supervisão deste.
+										Este Sistema considera 2 abordagens, Abordagem Negociação-Q Generica e Abordagem Sequencial tradicional , ambas com melhor desempenho que o CCO.
+										A diferença entre as 2 abordagens está no facto de na abordagem sequencial tradicional serem usados varios algoritmos como ilustrado,
+										para as diferentes dimensões e na abordagem Negociação-Q Genérica é o uso da negociação como mecanismo de decisão para obter a solução final.
+									</aside>
+								</div>
 							</section>
 
 							<section id="goals">
@@ -286,21 +288,43 @@
 
 								<section id="buyer_utility">
 									<h3>Methodology</h3>
-									<strong>Buyer Value Calculation (Utility)</strong><br>
+									<strong>Buyer Utility</strong><br>
 									<div class="body">
-										<table>
-											<tbody>
-												<tr class="spaceUnder">
-													<td>$\mu  = \mu_{\alpha}\times \beta + \mu_{\rho} \times (1 - \beta)$</td>
-												</tr>
-												<tr class="spaceUnder">
-													<td>$\mu_{\alpha} = 1 - \frac{\alpha}{\lambda}$</td>
-												</tr>
-												<tr class="spaceUnder">
-													<td>$\mu_{\rho} = 1 - \frac{\rho}{\tau}$</td>
-												</tr>
-											</tbody>
-										</table>
+										<div class="col-5" style="text-align: center">
+											<table>
+												<tbody>
+													<tr class="spaceUnder">
+														<td>$\mu  = \mu_{\alpha}\times \beta + \mu_{\rho} \times (1 - \beta)$</td>
+													</tr>
+													<tr class="spaceUnder">
+														<td><small>Availability Factor</small><br>$\mu_{\alpha} = 1 - \frac{\alpha}{\lambda}$</td>
+													</tr>
+													<tr class="spaceUnder">
+														<td><small>Price Factor</small><br> $\mu_{\rho} = 1 - \frac{\rho}{\tau}$</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<div class="col-1">&nbsp;</div>
+										<div class="col-5" style="text-align: center"><br>
+											<small><strong>Legend</strong></small><br>
+											<table>
+												<tbody>
+													<tr class="spaceUnder">
+														<small>
+															$\mu$ - buyer utility;<br>
+															$\mu_{\alpha}$ - availability utility;<br>
+															$\mu_{\rho}$ - price utility;<br>
+															$\beta$ - availability weight;<br>
+															$\alpha$ - availability proposed;<br>
+															$\lambda$ - delay to be minimized;<br>
+															$\rho$ - price proposed;<br>
+															$\tau$ - disruption cost;<br>
+														</small>
+													</tr>
+												</tbody>
+											</table>
+										</div>
 									</div>
 									<aside class="notes">
 										mu_alpha é a utilidade da disponbilidade, beta é o peso da disponiblidade no cálculo da utilidade, mu_rho é a utilidade do preço
@@ -316,12 +340,29 @@
 
 								<section id="seller_utility">
 									<h3>Methodology</h3>
-									<strong>Seller Value Calculation (Utility)</strong><br>
+									<strong>Seller Utility</strong><br>
 									<div class="body">
+										<div class="col-6" style="text-align: center">
+											<table>
+												<tbody>
+													<tr class="spaceUnder">
+														<br><br>
+														<td>$\mu = \frac{\rho -(1.5 \times \zeta)}{(3 \times \zeta) - (1.5 \times \zeta)}$</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<div class="col-1">&nbsp;</div>
+									<div class="col-5" style="text-align: center"><br><br>
+										<small><strong>Legend</strong></small><br>
 										<table>
 											<tbody>
 												<tr class="spaceUnder">
-													<td>$\mu = \frac{\rho -(1.5 \times \zeta)}{(3 \times \zeta) - (1.5 \times \zeta)}$</td>
+													<small>
+														$\mu$ - seller utility;<br>
+														$\zeta$ - price factor;<br>
+													</small>
 												</tr>
 											</tbody>
 										</table>
@@ -333,7 +374,6 @@
 										O preço de uma proposa a fazer é calculado através da sua disponibilidade. Quanto melhor a disponibilidade, mais caro será o recurso, pelo que o preço e a
 										disponibilidade são inversamente proporcionais (uma vez que uma disponibilidade de 0 quer dizer um voo que está disponível à hora de partida.) Um factor de preço
 										é calculado então em função da disponibilidade e depois multiplicado pelo custo associado ao empréstimo dos recursos, e obtém-se assim o preço a propor.
-										FORMULA DEPOIS DAS REFERENCIAS
 									</aside>
 								</section>
 
@@ -341,29 +381,104 @@
 									<h3>Methodology</h3>
 									<strong>Case-based Reasoning</strong>
 									<div class="body">
-										<ul>
-											<li>"A case-based reasoner solves problems by using or adapting solutions to old problems."[RS13];</li><br>
-											<li>The similiarity between two experiences is calculated through the euclidean distance between both.</li>
-										</ul>
-										<table>
-											<tbody>
-												<tr class="spaceUnder">
-													<td>$ d(\kappa,\chi) = \sum_{\eta=1}^{\psi}{\sqrt{(\kappa_{\eta} - \chi_{\eta})^2} \times \varepsilon}$</td>
-												</tr>
-											</tbody>
-										</table>
+										<div class="col-11" style="text-align: center">
+											"A case-based reasoner solves problems by using or adapting solutions to old problems."[RS13];<br>
+											<!-- <li>The similiarity between two experiences is calculated through the euclidean distance between both.</li> -->
+										</div>
+										<br><br><br>
+										<div class="col-4" style="text-align: left">
+											<img data-src = "figures/CBR.png" width="100%">
+										</div>
+										<!-- <div class="col-1">&nbsp;</div> -->
+										<div class="col-8 cbr" style="text-align: center">
+											<strong>Experience Respresentation</strong><br>
+											<small>&ltavailability feedback, price feedback, number of sellers, resource type&gt</small><br><br>
+											<strong>Outcome Respresentation</strong><br>
+											<small>&ltavailability feedback, price feedback, result&gt</small><br>
+										</div>
 									</div>
 									<aside class="notes">
-										O Case-based Reasoning é um método para resolver problemas utilizando ou adaptando soluções de problemas anteriores. Funciona com base na igualdade de problemas e
-										aplica ou adpata a solução de um problema igual, já resolvido, ao problema atual. No caso específico desta dissertação, foi aplicado no processamento de propostas
-										por parte do agente vendedor, sendo que cada ronda de negociação corresponde a um caso/problema. A similaridade entre casos/problemas é feita através da distância
-										euclideana. Foram consideradas como características de cada caso/problema o feedback dado pelo buyer, o número de vendedores na negociação e o recurso a ser negociado.
-										kappa é o caso/problema actual
-										chi é um caso/problema anterior
-										eta é a característica que está a ser comparada no momento
-										psi é o número total de características de um caso
-										varepsilon é o peso da característica a ser comparada no momento
-										SOFTMAX PARA DEPOIS DAS REFERENCIAS OU AQUI? OU FALA-SE AQUI E FORMULA PARA AS REFERENCIAS?
+										O Case-based Reasoning é um método para resolver problemas utilizando ou adaptando soluções de problemas anteriores. Funciona com base na igualdade de experiências e
+										aplica ou adpata a solução de um problema igual, já resolvido, ao problema atual.
+										Retrieve - Reuse - Revise - Retain, Procurar experiências iguais, utilizar ou adaptar as experiências iguais para ter uma solução  para o problema actual,
+										tendo uma solução, testar essa solução no problema actual e se necessário revê-la, depois de ter adaptado a solução ao problema actual, guarda a experieência resultante
+										como uma nova experiência.
+										O que identifica uma experiência é o feedback dado pelo buyer, o número de vendedores na negociação e o recurso a ser negociado.
+										Os agentes vendedores guardam também a acção que seguida perante tal experiência, e qual o resultado
+									</aside>
+								</section>
+
+								<section id="retrieve">
+									<h3>Methodology</h3>
+									<strong>Case-based Reasoning</strong><br>
+									<small><strong class>Retrieve</strong></small><br>
+									<div class="body">
+										<div class="col-8 cbr" style="text-align: center">
+											The similiarity between two experiences is calculated through the euclidean distance between both.
+											<table>
+												<tbody>
+													<tr class="spaceUnder">
+														<td>$ d(\kappa,\chi) = \sum_{\eta=1}^{4}{\sqrt{(\kappa_{\eta} - \chi_{\eta})^2} \times \varepsilon_{\eta}}$</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<div class="col-4" style="text-align: center"><br>
+											<small><strong>Legend</strong></small><br>
+											<table>
+												<tbody>
+													<tr class="spaceUnder">
+														<small>
+															$\kappa$ - current experience;<br>
+															$\chi$ - one experience from the experiences' record;<br>
+															$\eta$ - current feature under comparison;<br>
+															$\varepsilon_{\eta}$ - weight of current feature under comparison;<br>
+														</small>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<aside class="notes">
+										No caso específico desta dissertação, o cbr foi aplicado no processamento de propostas por parte do agente vendedor,
+										sendo que cada ronda de negociação corresponde a uma experiência. A similaridade entre experiências é feita através da distância
+										euclideana. Esta distância é calculada pela igualdade entre as características de cada experiência
+									</aside>
+								</section>
+
+								<section id="reuse">
+									<h3>Methodology</h3>
+									<strong>Case-based Reasoning</strong><br>
+									<small><strong>Reuse</strong></small><br>
+									<div class="body">
+										<div class="col-8 cbr" style="text-align: center">
+											Softmax is used to select one similar experience based on probability.
+											<table>
+												<tbody>
+													<tr class="spaceUnder">
+														<td>$ P(\aleph) =  \frac{e^\aleph}{\sum_{i=1}^{\varpi}{e^i}}$</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<div class="col-4" style="text-align: center"><br>
+											<small><strong>Legend</strong></small><br>
+											<table>
+												<tbody>
+													<tr class="spaceUnder">
+														<small>
+															$\aleph$ - the result of current experience;<br>
+															$P(\aleph)$ - probability of the item with $\aleph$ result being selected;<br>
+															$\varpi$ - the number of experiences in the similar experiences list;<br>
+														</small>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<aside class="notes">
+										O Softmax é utilizado para escolher uma experiência de entre as experiências similares, com base num valor probabilístico que é atribuído em função do restultado (qualidade)
+										da experiência.
 									</aside>
 								</section>
 							</section>
@@ -508,6 +623,7 @@
 
 							<section id="future_work">
 								<h3>Future Work</h3>
+								<div class="body">
 								<ul style="text-align: center; list-style: none; padding: 0; margin: 0;">
 									<li>Usage of different learning approches;</li>
 									<li>Integration in MASDIMA;</li>
@@ -515,6 +631,7 @@
 									<li>Usage of trust models;</li>
 									<li>Graphical Interface.</li>
 								</ul>
+								</div>
 							</section>
 
 							<section id="references">
