@@ -56,8 +56,8 @@
 			progress: true,
 
 			// Display the page number of the current slide
-			slideNumber: true,
-
+			slideNumber: false,
+			// slideNumber: 'c/t'
 
 			// Determine which displays to show the slide number on
 			showSlideNumber: 'all',

@@ -15,7 +15,7 @@
 	<title>reveal.js</title>
 
 	<link rel="stylesheet" href="css/reveal.css">
-	<link rel="stylesheet" href="css/theme/solarized.css">
+	<link rel="stylesheet" href="css/theme/sky.css">
 	<link rel="stylesheet" href="css/custom.css">
 
 	<!-- Theme used for syntax highlighting of code -->
@@ -87,7 +87,7 @@
 						<div class="row">
 							<div class="col-6" style="text-align: center">
 								<img data-src="figures/disruption.gif" width="100%"><br>
-								<small>Fig 1: Flight Disrutpion</small>
+								<small>Flight Disrutpion</small>
 							</div>
 							<div class="col-1">&nbsp;</div>
 							<div class="col-5" style="text-align: center">
@@ -110,19 +110,19 @@
 							</aside>
 						</section>
 
+
 						<section id="problem_2">
 							<h3>Problem</h3>
 							<strong>Airline Disruption Management</strong><br><br>
-							<div class="body" style="text-align:center">
 							Divided in three dimensions:<br>
-							<ul>
-								<li>Aircraft;</li>
-								<li>Crew Member;</li>
-								<li>Passenger;</li>
-							</ul>
-						</div>
+							<div class="body" style="text-align:center" data-markdown>
+								<script type="text/template">
+									<li>Aircraft;</li> <!-- .element: class="fragment" data-fragment-index="1" -->
+									<li>Crew&nbspMember;</li> <!-- .element: class="fragment" data-fragment-index="2" -->
+									<li>Passenger;</li> <!-- .element: class="fragment" data-fragment-index="3" -->
+								</script>
+							</div>
 							<aside class="notes">
-								Árvore em vez de texto
 								Existem 3 abordagens para resolver o probelma de gestão de interrupções:
 								Sequencial, Integrada e Parcialmente Integrada.
 								Sequencial: São resolvidas em sequência, o que atribui graus de importância às dimensões, sendo que a primeira é a mais importante e o input da segunda é a solução da primeira e por aí em diante.
@@ -135,31 +135,30 @@
 							<h3>Problem</h3>
 							<strong>Airline Disruption Management</strong><br><br>
 							<div class="body" style="text-align:center">
-							<ul>
-								<li>Due to irregular operations, airline companies lose between 2% and 3% of its annual revenue, every year;</li>
-								<!-- name given to  a flight that for some reason can’t fulfill the planned schedule, causing the flights to be delayed or canceled. -->
-								<br>
-								<li>Even for small companies, this cost can mean losses of millions of euros.</li>
-								<!-- The process that tries to minimize irregular operations.  -->
 								<ul>
-								</div>
+									<li>Due to irregular operations, airline companies lose between 2% and 3% of its annual revenue, every year [CRO12];</li>
+									<!-- name given to  a flight that for some reason can’t fulfill the planned schedule, causing the flights to be delayed or canceled. -->
+									<br>
+									<li>Even for small companies, this cost can mean losses of millions of euros.</li>
+									<!-- The process that tries to minimize irregular operations.  -->
+									<ul>
+									</div>
 									<aside class="notes">
-										Aqui quero uma imagem de uma seta dos placards electronicos da bolsa a descer, com estes dois items do lado, como no primeiro slide.
 										Estima-se que anualmente, devido a operações irregulares, as companhias aéreas perdem entre 2% a 3% da sua receita anual, o que mesmo
-										para companhias pequenas pode significar perdas a ascender milhares de euros.
+										para companhias pequenas pode significar perdas a ascender milhares de euros. De acordo com o relatório anual da TAP de 2010, estas perdas foram
+										entre 39.7 59.5 milhões de euros.
+
 									</aside>
 								</section>
 
 								<section id="problem_4">
 									<h3>Problem</h3>
-									<strong>Airline Operations Control Centre</strong><br><br>
+									<strong>Airline Operations Control Centre</strong><br>
 									<div class="body" style="text-align:center">
-									<img data-src="figures/AOCC_Acting_Cycle.gif"  width="57%"><br>
-									<small>Fig 2: AOCC Actying Cycle</small>
-								</div>
+										<img data-src="figures/Act Cycle of the AOCC.png"  width="%"><br>
+										<small>AOCC Actying Cycle [CRO12]</small>
+									</div>
 									<aside class="notes">
-										Explicar acting cycle
-										Fazer a devida referencia no gif [Referencia para castro2012 do documento]
 									</aside>
 								</section>
 							</section>
@@ -172,7 +171,7 @@
 										<br>
 										<div class="row" style="text-align: center;">
 											<strong>Motivation 1</strong><br>
-											<i>A better recovery process could reduce the costs in at least 20% of the annual losses due to irregular operations.</i>
+											<i>A better recovery process could reduce the costs in at least 20% of the annual losses due to irregular operations. [Irr96]</i>
 										</div>
 									</div>
 									<aside class="notes">
@@ -218,9 +217,8 @@
 								<strong>MASDIMA</strong><br>
 								<div class="body" style="text-align:center">
 									<img data-src="figures/AOC_MASDIMA.png"  width="79%"><br>
-									<small>Fig 3: MASDIMA Architecture</small>
+									<small>MASDIMA Architecture</small>
 									<aside class="notes">
-										Devida referencia na imagem [Referencia para castro2012 do documento]
 										Como esta dissertação  é complementar à dissertaçao de Doutoromento do co-orientador, António Castro, Alguma da literatura revista passa pelo
 										Sistema Multi-Agente sugerido, para substituir as tarefas do Centro de Controlo de Operações, tendo sempre a supervisão deste.
 										Este Sistema considera 2 abordagens, Abordagem Negociação-Q Generica e Abordagem Sequencial tradicional , ambas com melhor desempenho que o CCO.
@@ -285,7 +283,7 @@
 										<h3>Methodology</h3>
 										<strong  class="slide_title" >Communication Diagram</strong>
 										<img data-src = "figures/optimised.gif" width="33%">
-										<small>Fig 4: Electronic Market Workflow</small>
+										<small>Electronic Market Workflow</small>
 										<aside class="notes">
 											Alt+Click para zoom, se necessário
 										</aside>
@@ -392,8 +390,9 @@
 											<!-- <li>The similiarity between two experiences is calculated through the euclidean distance between both.</li> -->
 										</div>
 										<br><br><br>
-										<div class="col-4" style="text-align: left">
+										<div class="col-4" style="text-align: center">
 											<img data-src = "figures/CBR.png" width="100%">
+											<small>Case-based Reasoing cycle</small>
 										</div>
 										<!-- <div class="col-1">&nbsp;</div> -->
 										<div class="col-8 cbr" style="text-align: center">
@@ -525,22 +524,22 @@
 								<section id="experiment_1">
 									<h3>Results</h3>
 									<strong>Experiment 1 (50-50)</strong><br>
-									<img data-src = "figures/experiment1.png" width="70%">
-									<small>Fig 5: Experiment 1 Results</small>
+									<img data-src = "figures/experiment1.png" width="70%"><br>
+									<small>Experiment 1 Results</small>
 								</section>
 
 								<section id="experiment_2">
 									<h3>Results</h3>
 									<strong>Experiment 2 (80-20)</strong><br>
-									<img data-src = "figures/experiment2.png" width="70%">
-									<small>Fig 6: Experiment 2 Results</small>
+									<img data-src = "figures/experiment2.png" width="70%"><br>
+									<small>Experiment 2 Results</small>
 								</section>
 
 								<section id="experiment_3">
 									<h3>Results</h3>
 									<strong>Experiment 3 (20-80)</strong><br>
-									<img data-src = "figures/experiment3.png" width="70%">
-									<small>Fig 7: Experiment 3 Results</small>
+									<img data-src = "figures/experiment3.png" width="70%"><br>
+									<small>Experiment 3 Results</small>
 								</section>
 
 								<section id="comparisons_overview">
@@ -573,29 +572,29 @@
 								<section id="comparison_1">
 									<h3>Results</h3>
 									<strong>Comparison 1</strong><br>
-									<img data-src = "figures/Exp1-Exp2.png" width="70%">
-									<small>Fig 8: Comparison 1 Results</small>
+									<img data-src = "figures/Exp1-Exp2.png" width="70%"><br>
+									<small>Comparison 1 Results</small>
 								</section>
 
 								<section id="comparison_2">
 									<h3>Results</h3>
 									<strong>Comparison 2</strong><br>
-									<img data-src = "figures/Exp1-Exp3.png" width="70%">
-									<small>Fig 9: Comparison 2 Results</small>
+									<img data-src = "figures/Exp1-Exp3.png" width="70%"><br>
+									<small>Comparison 2 Results</small>
 								</section>
 
 								<section id="comparison_3">
 									<h3>Results</h3>
 									<strong>Comparison 3</strong><br>
-									<img data-src = "figures/Exp2-Exp3.png" width="70%">
-									<small>Fig 10: Comparison 3 Results</small>
+									<img data-src = "figures/Exp2-Exp3.png" width="70%"><br>
+									<small>Comparison 3 Results</small>
 								</section>
 
 								<section id="costs_and_savings">
 									<h3>Results</h3>
 									<strong>Costs and Savings</strong><br>
-									<img data-src = "figures/costs_and_savings.png" width="69%">
-									<small>Fig 11: Costs and Savings Results</small>
+									<img data-src = "figures/snip_20170716171220.png" width="70%"><br>
+									<small>Costs and Savings Results</small>
 								</section>
 							</section>
 
@@ -630,13 +629,13 @@
 							<section id="future_work">
 								<h3>Future Work</h3>
 								<div class="body" style="text-align:center">
-								<ul style="text-align: center; list-style: none; padding: 0; margin: 0;">
-									<li>Usage of different learning approches;</li>
-									<li>Integration in MASDIMA;</li>
-									<li>Usage of heuristics to combine the resources;</li>
-									<li>Usage of trust models;</li>
-									<li>Graphical Interface.</li>
-								</ul>
+									<ul style="text-align: center; list-style: none; padding: 0; margin: 0;">
+										<li>Usage of different learning approches;</li>
+										<li>Integration in MASDIMA;</li>
+										<li>Usage of heuristics to combine the resources;</li>
+										<li>Usage of trust models;</li>
+										<li>Graphical Interface.</li>
+									</ul>
 								</div>
 							</section>
 
@@ -644,176 +643,115 @@
 								<h3>References</h3>
 								<br>
 								<table>
-						<tbody>
-							<tr>
-								<td>[RS13]</td>
-								<td>Christopher K Riesbeck and Roger C Schank. <em>Inside case-based reasoning</em>. Psychology Press, 2013.</td>
-							</tr>
-							<!-- <tr>
-								<td>[NASA17]</td>
-								<td>NASA. "Mars planet facts news &amp; images." <a href="http://mars.jpl.nasa.gov">http://mars.jpl.nasa.gov</a> (accessed January 29, 2017).</td>
-							</tr>
-							<tr>
-								<td>[PM13]</td>
-								<td>Pratt, Gill, and Justin Manzo. "The darpa robotics challenge [competitions]." <em>IEEE Robotics &amp; Automation Magazine</em> 20, no. 2 (2013): 10-12.</td>
-							</tr>
-							<tr>
+									<tbody>
+										<tr>
+											<td>[RS13]</td>
+											<td>Christopher K Riesbeck and Roger C Schank. <em>Inside case-based reasoning</em>. Psychology Press, 2013.</td>
+										</tr>
+										<tr>
+											<td>[CRO12]</td>
+											<td>António J. M. Castro, Ana Paula Rocha and Eugénio Oliveira. Towards an Autonomous and Intelligent Airline Operations Control.
+												<em>15th International IEEE Conference on Intelligent Transportation Systems Anchorage, Alaska, USA, September 16-19</em>, pages 1429-1434, 2012.</td>
+										</tr>
+										<tr>
+											<td>[Irr96]</td>
+											<td>ME Irrang. The handbook of airline economics.<em>Air Transport Association of America</em>, pages 349-365, 1996.</td>
+										</tr>
+
+										<!-- <tr>
+										<td>[NASA17]</td>
+										<td>NASA. "Mars planet facts news &amp; images." <a href="http://mars.jpl.nasa.gov">http://mars.jpl.nasa.gov</a> (accessed January 29, 2017).</td>
+									</tr>
+									<tr>
+									<td>[PM13]</td>
+									<td>Pratt, Gill, and Justin Manzo. "The darpa robotics challenge [competitions]." <em>IEEE Robotics &amp; Automation Magazine</em> 20, no. 2 (2013): 10-12.</td>
+								</tr>
+								<tr>
 								<td>[YIL<sup>+</sup>16]</td>
 								<td>Yang, Yiming, Vladimir Ivan, Zhibin Li, Maurice Fallon, and Sethu Vijayakumar. "iDRM: Humanoid motion planning with realtime end-pose selection in complex environments." In <em>Humanoid Robots (Humanoids), 2016 IEEE-RAS 16th International Conference on</em>, pp. 271-278. IEEE, 2016.</td>
 							</tr>
 							<tr>
-								<td>[YIMV16]</td>
-								<td>Yang, Yiming, Vladimir Ivan, Wolfgang Merkt, and Sethu Vijayakumar. "Scaling Sampling-based Motion Planning to Humanoid Robots." In <em>ROBIO</em>. IEEE, 2016.</td>
-							</tr> -->
-						</tbody>
-					</table>
+							<td>[YIMV16]</td>
+							<td>Yang, Yiming, Vladimir Ivan, Wolfgang Merkt, and Sethu Vijayakumar. "Scaling Sampling-based Motion Planning to Humanoid Robots." In <em>ROBIO</em>. IEEE, 2016.</td>
+						</tr> -->
+					</tbody>
+				</table>
 
-							</section>
-
-							<section id="final">
-								<h3>Thank You</h3>
-								<br>
-								<div>
-									<small>
-										Luís Reis, <i>University of Porto</i>
-										<br>
-										Email: brochadoluis@gmail.com
-										<br>
-										<strong>Supervision</strong>
-										<br>
-										Ana Paula Rocha, PhD, <i>University of Porto</i>
-										<br>
-										António Castro, PhD, <i>University of Porto</i>
-										<br>
-									</small>
-								</div>
-							</section>
-
-							<!-- <section>Single Horizontal Slide</section>
-							<section>
-							<section>Vertical Slide 1</section>
-							<section>
-							## Page title2
-							<br><br><br>
-							A paragraph with some text and a [link](http://hakim.se).
-						</section>
-					</section>
-					<section data-markdown>
-					<textarea data-template>
-					## Page title
-					<br><br><br>
-					A paragraph with some text and a [link](http://hakim.se).
-				</textarea>
 			</section>
-			<section data-markdown>
-			<script type="text/template"> -->
-			<!-- - Item 1 <!-- .element: class="fragment" data-fragment-index="1" -->
-			<!-- - Item 2 <!-- .element: class="fragment" data-fragment-index="2" -->
-			<!-- - Item 3 <!-- .element: class="fragment" data-fragment-index="2" -->
-			<!-- - Item 4 <!-- .element: class="fragment" data-fragment-index="2" -->
-			<!-- </script>
-		</section>
-		<section data-markdown>
-		<script type="text/template">
-		<!-- .slide: data-background="#ff0000"
-		Markdown content
-	</script>
-</section>
-<section>
-<p class="fragment grow">grow</p>
-<p class="fragment shrink">shrink</p>
-<p class="fragment fade-out">fade-out</p>
-<p class="fragment fade-up">fade-up (also down, left and right!)</p>
-<p class="fragment current-visible">visible only once</p>
-<p class="fragment highlight-current-blue">blue only once</p>
-<p class="fragment highlight-red">highlight-red</p>
-<p class="fragment highlight-green">highlight-green</p>
-<p class="fragment highlight-blue">highlight-blue</p>
-</section>
-<section data-background-image = "http://i.giphy.com/90F8aUepslB84.gif">
-</section>
-<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-video-loop data-background-video-muted>
-</section>
-<section data-background-iframe="https://slides.com" data-background-interactive>
-<h2>Iframe</h2>
-</section>
-<section data-transition="slide">
-The train goes on …
-</section>
-<section data-transition="slide">
-<video data-autoplay src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"></video>
-</section>
-<section data-transition="slide-in fade-out">
-<section>
-<h2>This video will use up the remaining space on the slide</h2>
-<video class="stretch" src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"></video>
-</section>
-</section>
-<section data-transition="fade-in slide-out">
-(Passengers entering and leaving)
-</section>
-<section data-transition="slide">
-And it starts again.
-<a href="#/2/2">Link</a>
-<a href="#/some-slide">Link</a>
-</section>
-<section>
-<span class="fragment fade-in">
-<span class="fragment fade-out">I'll fade in, then out</span>
-</span>
-</section>
-<section>
-<p class="fragment" data-fragment-index="3">Appears last</p>
-<p class="fragment" data-fragment-index="1">Appears first</p>
-<p class="fragment" data-fragment-index="2">Appears second</p>
-</section>
-<section>
-<pre><code data-trim data-noescape>
-(def lazy-fib
-(concat
-[0 1]
-<mark>((fn rfib [a b]</mark>
-(lazy-cons (+ a b) (rfib b (+ a b)))) 0 1)))
-</code></pre>
-</section> -->
-</div>
-</div>
 
-<script src="lib/js/head.min.js"></script>
-<script src="js/reveal.js"></script>
+			<section id="final">
+				<h3>Thank You</h3>
+				<br>
+				<div>
+					<small>
+						Luís Reis, <i>University of Porto</i>
+						<br>
+						Email: brochadoluis@gmail.com
+						<br>
+						<strong>Supervision</strong>
+						<br>
+						Ana Paula Rocha, PhD, <i>University of Porto</i>
+						<br>
+						António Castro, PhD, <i>University of Porto</i>
+						<br>
+					</small>
+				</div>
+			</section>
 
-<script>
-// More info about config & dependencies:
-// - https://github.com/hakimel/reveal.js#configuration
-// - https://github.com/hakimel/reveal.js#dependencies
-Reveal.initialize({
-	// Display the page number of the current slide
-	slideNumber: 'c/t', // false
+			<section>
+				<h3 style="margin-top: 7%;">Appendix</h3>
+			</section>
 
-	// Push each slide change to the browser history
-	history: true, // false
+			<section>
+				<h3>Price Establishment</h3><br>
+				<div class="col-6" style="text-align: center">
+				<img data-src="figures/price_chart.png" width="100%"><br>
+				<small>Price Establishment Function</small></div>
+				<div class="col-1">&nbsp;</div>
+				<div class="col-5" style="text-align: center">
+					$\xi = \frac{-1.5}{\lambda} \times \alpha$<br><br>
+					<small><strong>Legend</strong><br><br>
+					$\xi$ - the price multiplier;<br>
+					$\lambda$ - the delay;<br>
+					$\alpha$ - the availability;</small>
+				</div>
+			</section>
 
-	// Vertical centering of slides
-	center: true, // false
+			<script src="lib/js/head.min.js"></script>
+			<script src="js/reveal.js"></script>
 
-	// Transition style
-	transition: 'fade', // none/fade/slide/convex/concave/zoom
-	dependencies: [
-		// Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
-		{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-		// Interpret Markdown in <section> elements
-		{ src: 'plugin/markdown/marked.js' },
-		{ src: 'plugin/markdown/markdown.js' },
-		// Syntax highlight for <code> elements
-		{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-		// Zoom in and out with Alt+click
-		{ src: 'plugin/zoom-js/zoom.js', async: true },
-		// Speaker notes
-		{ src: 'plugin/notes/notes.js', async: true },
-		// MathJax
-		{ src: 'plugin/math/math.js', async: true }
-	]
-});
-</script>
-</body>
-</html>
+			<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				// Display the page number of the current slide
+				slideNumber: 'c/t', // false
+
+				// Push each slide change to the browser history
+				history: true, // false
+
+				// Vertical centering of slides
+				center: true, // false
+
+				// Transition style
+				transition: 'zoom', // none/fade/slide/convex/concave/zoom
+				dependencies: [
+					// Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					// Interpret Markdown in <section> elements
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					// Syntax highlight for <code> elements
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					// Zoom in and out with Alt+click
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					// Speaker notes
+					{ src: 'plugin/notes/notes.js', async: true },
+					// MathJax
+					{ src: 'plugin/math/math.js', async: true }
+				]
+			});
+			</script>
+		</body>
+		</html>
