@@ -3703,7 +3703,7 @@
 	 */
 	function getTotalSlides() {
 
-		return getSlides().length;
+		return getSlides().length-2;
 
 	}
 
